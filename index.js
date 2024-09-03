@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const io = require("socket.io")(process.env.PORT, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://ojtrackingsystem.vercel.app/"],
   },
 });
 
